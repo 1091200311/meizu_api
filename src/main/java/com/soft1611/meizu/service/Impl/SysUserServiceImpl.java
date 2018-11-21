@@ -1,5 +1,5 @@
 package com.soft1611.meizu.service.Impl;
-import com.soft1611.meizu.dao.SysUserRepositry;
+import com.soft1611.meizu.dao.SysUserRepository;
 import com.soft1611.meizu.entity.LoginUser;
 import com.soft1611.meizu.entity.SysUser;
 import com.soft1611.meizu.utils.ResponseUtil;
@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 @Service
 public class SysUserServiceImpl implements SysUserService {
     @Resource
-    private SysUserRepositry sysUserRepositry;
+    private SysUserRepository sysUserRepositry;
     @Override
     public ResponseUtil userLogin(LoginUser loginUser) {
         SysUser sysUser = sysUserRepositry.findSysUserByAccount(loginUser.getAccount());

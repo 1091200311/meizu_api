@@ -9,13 +9,13 @@ import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("/user")
-@CrossOrigin("http://localhost:80")
+@CrossOrigin("*")
 public class SysUserController {
     @Resource
     private SysUserService sysUserService;
 
     @RequestMapping(value = "/sign_in", method = RequestMethod.POST)
-    public ResponseUtil signIn(@RequestBody LoginUser loginUser) {
+    public ResponseUtil signIn( LoginUser loginUser) {
         System.out.println(loginUser);
         return sysUserService.userLogin(loginUser);
     }

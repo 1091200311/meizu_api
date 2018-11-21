@@ -17,6 +17,4 @@ public class SysUser {
     private String account;
     private String password;
     private String avatar;
-    private String sex;
-    private String company;
 }
