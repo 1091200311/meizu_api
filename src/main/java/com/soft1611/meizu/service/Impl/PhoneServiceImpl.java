@@ -16,4 +16,9 @@ public class PhoneServiceImpl implements PhoneService {
     public List<Phone> getAll() {
         return phoneRepository.findAll();
     }
+
+    public List<Phone> getPhonesByNameLike(String keywords) {
+        return phoneRepository.findByName(keywords);
+    }
+
 }

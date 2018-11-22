@@ -8,10 +8,10 @@
 //@Entity
 //@Data
 //@Builder
-//public class UserAddress {
+//public class Address {
 //    private Integer id;
 //    private String UserName;
 //    private String UserAddress;
-//    private String UserTelphone;
+//    private String UserTelephone;
 //
 //}

@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface PhoneService {
     List<Phone> getAll();
+    List<Phone> getPhonesByNameLike(String keywords);
 }

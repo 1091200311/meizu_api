@@ -11,8 +11,8 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
-@CrossOrigin("*")
+@RequestMapping("/voice")
+@CrossOrigin("http:localhost:80")
 public class VoiceController {
     @Resource
     private VoiceService voiceService;
