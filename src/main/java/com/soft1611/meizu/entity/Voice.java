@@ -10,7 +10,7 @@ import javax.persistence.Id;
 @Entity
 @Data
 @Builder
-public class voice {
+public class Voice {
     @Id
     @GeneratedValue
     private Integer id;

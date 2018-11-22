@@ -1,7 +1,7 @@
 package com.soft1611.meizu.controller;
 
 import com.soft1611.meizu.entity.LoginUser;
-import com.soft1611.meizu.service.Impl.SysUserService;
+import com.soft1611.meizu.service.SysUserService;
 import com.soft1611.meizu.utils.ResponseUtil;
 import org.springframework.web.bind.annotation.*;
 

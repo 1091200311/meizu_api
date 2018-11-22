@@ -1,4 +1,4 @@
-package com.soft1611.meizu.service.Impl;
+package com.soft1611.meizu.service;
 
 
 import com.soft1611.meizu.entity.LoginUser;
