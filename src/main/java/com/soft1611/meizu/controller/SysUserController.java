@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("/user")
-@CrossOrigin("http://localhost:81")
+@CrossOrigin("*")
 public class SysUserController {
     @Resource
     private SysUserService sysUserService;

@@ -1,7 +1,7 @@
 package com.soft1611.meizu.controller;
 
-import com.soft1611.meizu.entity.Voice;
-import com.soft1611.meizu.service.VoiceService;
+import com.soft1611.meizu.entity.Location;
+import com.soft1611.meizu.service.LocationService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,13 +11,13 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
-@RequestMapping("/voice")
+@RequestMapping("/location")
 @CrossOrigin("*")
-public class VoiceController {
+public class LocationController {
     @Resource
-    private VoiceService voiceService;
+    private LocationService locationService;
     @GetMapping("/all")
-    public List<Voice> getAll(){
-        return voiceService.getAll();
+    public List<Location> getAll(){
+        return locationService.getAll();
     }
 }
