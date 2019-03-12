@@ -13,7 +13,6 @@ import javax.annotation.Resource;
 public class SysUserController {
     @Resource
     private SysUserService sysUserService;
-
     @RequestMapping(value = "/sign_in", method = RequestMethod.POST)
     public ResponseUtil signIn( LoginUser loginUser) {
         System.out.println(loginUser);
